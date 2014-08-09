@@ -133,6 +133,8 @@ public class InstrumentMain {
 				builder.threadsafeRigorous(true);
 			} else if (args[i].equals("--auxClasspath")) {
 				addElementsToJVM(args[++i]);
+                        } else if (args[i].equals("--listOfFilesToInstrument")) {
+                                builder.listOfFilesToInstrument(args[++i]);
 			} else {
 				builder.addFileToInstrument(args[i]);
 			}
