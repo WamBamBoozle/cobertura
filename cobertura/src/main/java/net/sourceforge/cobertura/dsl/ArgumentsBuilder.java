@@ -141,7 +141,7 @@ public class ArgumentsBuilder {
 	}
 
         public ArgumentsBuilder listOfFilesToInstrument(String listFileName) {
-		String baseDir = getBaseDirectory().getPath();
+		String baseDir = getBaseDirectory();
                 try {
                         File file = new File(listFileName);
                         FileReader fileReader = new FileReader(file);
